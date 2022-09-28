@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Cake</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <a id="logo" href="/index.html"><img width="180px" src="imagens/LOGO.png" alt=""></a>
+        <div id="nav">
+            <input type="checkbox" id="checkbox" class="checkbox"><label for="checkbox" class="label-menu">Menu <span class="hamburger"></span></label>
+            <ul id="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/sobrenos.html">Quem somos</a></li>
+                <li><a href="/Produto.html">Produtos</a></li>
+                <li><a href="/nossa-equipe.html">Equipe</a></li>
+                <li><a href="/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div> 
+
+    <div id="slideshow">
+
+        <div class="slides">
+            <input type="radio" name="btn-img" id="radio1">
+            <input type="radio" name="btn-img" id="radio2">
+            <input type="radio" name="btn-img" id="radio3">
+            <input type="radio" name="btn-img" id="radio4">
+
+            <div class="img1 primeiro">
+                <img src="imagens/slide/sld1.png" alt="imagem-1">
+            </div>
+            <div class="img1">
+                <img src="imagens/slide/sld2.png" alt="imagem-2">
+            </div>
+            <div class="img1">
+                <img src="imagens/slide/sld3.png" alt="imagem-3">
+            </div>
+            <div class="img1">
+                <img src="imagens/slide/sld4.png" alt="imagem-4">
+            </div>
+
+            <!--<div class="navegacao-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>-->
+            
+        </div>
+
+        <div class="navegacao">
+            <label class="manual-btn" id="manual-btn1" for="radio1"></label>
+            <label class="manual-btn" id="manual-btn2" for="radio2"></label>
+            <label class="manual-btn" id="manual-btn3" for="radio3"></label>
+            <label class="manual-btn" id="manual-btn4" for="radio4"></label>
+        </div>
+    </div>
+    
+
+    <div id="container">
+        <h1>Nossos Produtos</h1>
+        <div class="lista">
+            <div class="seclist">
+                <img src="/imagens/Produtos/bolos_personalizados/casamento1.jpg" alt="">
+                <div class="centro">Bolos Personalizados</div>
+            </div>
+            <div class="seclist">
+                <img src="/imagens/Produtos/bolos/prestigio1.png" alt="">
+                <div class="centro">Bolos Caseiros</div>
+            </div>
+        </div>
+        <div class="lista">
+            <div class="seclist">
+                <img src="/imagens/Produtos/doces/copo-felicidade1.jpg" alt="">
+                <div class="centro">Gulosemas</div>
+            </div>
+            <div class="seclist">
+                <img src="/imagens/Produtos/doces_padaria/minissonho-recheado1.jpg" alt="">
+                <div class="centro">Doces de Padaria</div>
+            </div>
+        </div>
+        <div class="lista">
+            <div class="seclist">
+                <img src="/imagens/Produtos/tortas/bombom1.jpg" alt="">
+                <div class="centro">Tortas</div>
+            </div>
+            <div class="seclist">
+                <img src="/imagens/Produtos/sobremesas/pave-russa1.png" alt="">
+                <div class="centro">Sobremesas</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="delivery">
+        <h2>DELIVERY PARA REGIÃO METROPOLITANA DO RJ</h2>
+        <div id="dlvr-icons">
+            <img src="imagens/delivery/agendamento.png" alt="">
+            <img src="imagens/delivery/caminhao.png" alt="">
+            <img src="imagens/delivery/seguro.png" alt="">
+        </div>
+        <div id="dlvr-texto">
+           <div>Entrega agendada</div>
+           <div>Entrega expressa</div>
+           <div>Entrega segura</div>
+        </div>
+        <img style="margin-top: 16px;" src="imagens/delivery/pagamento.png" alt="">
+        <div style="font-style: italic; font-size:0.8rem;">Aceitamos pix e cartões</div>
+        <p style="padding: 0 2rem;">Com o nosso próprio sistema de Delivery, o cliente pode agendar receber os produtos no dia e horário combinado ou se desejar receber no mesmo dia da compra, garantimos a entrega no menor tempo possível e com nosso sistema de segurança, receba seu produto ou seu dinheiro de volta</p>
+    </div>
+
+    <div id="rodape">
+        <div class="rdp1">
+            <h2>FAST CAKE</h2>
+            <p>Fast Cake: <em>"Velecidade, sabor e satisfação na sua mesa."</em></p>
+                <div id="icon">
+                    <ul id="list-icon">
+                        <li><a href=""><img src="imagens/rodape/insta.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/tiktok.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/gmail.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/whatsapp.png" alt=""></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="rdp2">
+            <p>&copy; Todos os direitos reservados 2022 - Programadores Cariocas</p>
+        </div>
+    </div>
+
+
+    <script>
+        let count = 1;
+        document.getElementById('radio1').checked = true;
+        
+        setInterval( function(){
+            nextImage();
+        }, 5000)
+
+        function nextImage(){
+            count++;
+            if(count>4){
+                count = 1;
+            }
+
+            document.getElementById("radio"+count).checked = true;
+        }
+    </script>
+
+
+</body>
+
+</html>

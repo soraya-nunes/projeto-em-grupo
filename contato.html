@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Cake</title>
+    <link rel="stylesheet" href="/css/contato.css">
+</head>
+
+<body>
+    <div id="header">
+        <a id="logo" href="/index.html"><img width="180px" src="imagens/LOGO.png" alt=""></a>
+        <div id="nav">
+            <input type="checkbox" id="checkbox" class="checkbox"><label for="checkbox" class="label-menu">Menu <span class="hamburger"></span></label>
+            <ul id="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/sobrenos.html">Quem somos</a></li>
+                <li><a href="/Produto.html">Produtos</a></li>
+                <li><a href="/nossa-equipe.html">Equipe</a></li>
+                <li><a href="/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div> 
+
+        <div id="main">
+            
+            <form class="form" id="form" action="contato">
+
+                <div class="form-control">
+    
+                    <label for="" >Nome</label> <br>
+                    <input type="text" id="nome" maxlength="20">
+                    <small class="erro" id="erro1"></small>
+                </div>
+                <br><br>
+    
+                <div class="form-control">
+    
+                    <label>Email</label> <br>
+                    <input type="email" id="email">
+                    <small id="erro2"></small>
+    
+                </div>
+                <br><br>    
+                <div class="form-control">
+    
+                    <label>Telefone</label><br>
+                    <input type="number" id="telefone" maxlength="20">
+                    <small id="erro3"></small>
+    
+                </div>
+                <br><br>
+
+                <label for="">Assunto</label><br>
+                    <select name="---" id="assunto" maxlength="20">
+                        <option value="">---</option>
+                        <option value="">Elogio</option>
+                        <option value="">Reclamação</option>
+                        <option value="">Dúvidas</option>
+                        <option value="">Outro</option>
+                    </select>
+                    <br><br>
+
+                    <div class="form-control">
+
+                        <label for="">Mensagem</label> <br>
+                        <textarea name="" id="mensagem" cols="80" rows="10"></textarea maxlength="300">    
+                            <small id="erro4"></small>
+                    </div>
+                    <br><br>
+                    
+                <button id="cliquebotao" type="submit" >ENVIAR</button>
+            </form>
+
+
+                    
+                    <div id="aside">
+                        <h2>Central de Atendimento</h2>
+                        <p>De Seg a Sex das 09h às 18h <br>
+                            Sáb das 09h às 17h <br>
+                            fastcake@contato.com.br <br><br> 
+                            Tel: 21. 3172-2126 | 3900-7228</p>
+    
+                            <h2>Unidades</h2>
+                            <p> <strong>Bonsucesso</strong> <br><br>
+                            Rua Dona Isabel, 432 Bonsucesso - Rio de Janeiro/RJ
+                             <br><br>
+                             <strong>Horario de Funcionamento:</strong> <br><br>
+                             Segunda a Sexta das 11h às 18h<br>Sábados: das 11h às 17h<br>Domingo: fechado
+                            </p>
+                        </div>
+                    
+
+
+                </div>
+
+                <div id="rodape">
+                    <div class="rdp1">
+                        <h2>FAST CAKE</h2>
+                        <p>Fast Cake: <em>"Velecidade, sabor e satisfação na sua mesa."</em></p>
+                            <div id="icon">
+                                <ul id="list-icon">
+                                    <li><a href=""><img src="imagens/rodape/insta.png" alt=""></a></li>
+                                    <li><a href=""><img src="imagens/rodape/facebook.png" alt=""></a></li>
+                                    <li><a href=""><img src="imagens/rodape/tiktok.png" alt=""></a></li>
+                                    <li><a href=""><img src="imagens/rodape/gmail.png" alt=""></a></li>
+                                    <li><a href=""><img src="imagens/rodape/whatsapp.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="rdp2">
+                        <p>&copy; Todos os direitos reservados 2022 - Programadores Cariocas</p>
+                    </div>
+                </div>
+
+<script src="/js/contato.js"></script>
+
+</body>
+</html>

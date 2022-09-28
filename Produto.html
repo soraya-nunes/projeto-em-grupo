@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloprod.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <a id="logo" href="/index.html"><img width="180px" src="imagens/LOGO.png" alt=""></a>
+        <div id="nav">
+            <input type="checkbox" id="checkbox" class="checkbox"><label for="checkbox" class="label-menu">Menu <span class="hamburger"></span></label>
+            <ul id="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/sobrenos.html">Quem somos</a></li>
+                <li><a href="/Produto.html">Produtos</a></li>
+                <li><a href="/nossa-equipe.html">Equipe</a></li>
+                <li><a href="/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div> 
+
+
+    <div id="containermaster">
+        <div class="botoesrpf">
+            <div class="botoesemlinha">
+                <input class="bllebpf" type="button" value="REFAZER PEDIDO" onclick="limpar(lista,valores)">
+                <input class="bllebpf" type="button" value="FINALIZAR PEDIDO" onclick="pedidofechado(valores)">
+            </div>
+            <div id="pfechado"></div>
+        </div>
+
+        <div id="container-em-linha">
+            <div class="bloco2">
+                <div id="container2">
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/chocoemorango.png" alt="bolo1">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Chocolate e Morango<br>Preço:R$ <span class="v1">100</span></h3>
+                        <div><input class ="styleb" type="button" value="Comprar" onclick="compreibolo1()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/coco.png" alt="bolo2">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Sabor Coco<br>Preço:R$ <span class="v2">80</span></h3>
+                        <div><input class ="styleb" type="button" value="Comprar" onclick="compreibolo2()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/abacaxi-com-coco.png" alt="bolo3">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Abacaxi com Coco<br>Preço:R$ <span class="v3">70</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo3()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/black-cake.png" alt="bolo4">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Black Cake<br> Preço:R$ <span class="v4">110</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo4()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/bombom.png" alt="bolo5">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Bombom<br> Preço:R$ <span class="v5">120</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo5()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/brigadeirao.png" alt="bolo6">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Brigadeirão<br> Preço:R$ <span class="v6">77</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo6()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/delicia-damasco.png" alt="bolo7">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Delícia De Damasco <br> Preço:R$ <span class="v7">85</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo7()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/doce-leite-coco.png" alt="bolo8">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Doce de leite Com Coco - Preço:R$ <span class="v8">108</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo8()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/morango-chantilly.png" alt="bolo9">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Morango c/Chantilly - Preço:R$<span class="v9">95</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo9()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/nozes.png" alt="bolo10">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Nozes <br> Preço:R$<span class="v10">94</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo10()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/bolos/morango-trufado.png" alt="bolo11">
+                        <h3 class="titulo">Bolo</h3>
+                        <h3>Morango Trufado <br> Preço:R$ <span class="v11">73</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo11()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/cheese-cake.jpeg" alt="bolo12">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Cheese Cake<br>Preço:R$ <span class="v12">82</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo12()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/tortas/crocante.jpg" alt="bolo13">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Crocante<br>Preço:R$ <span class="v13">78</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo13()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/tortas/kitkat-morango.jpg" alt="bolo14">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>KitKat Morango<br>Preço:R$ <span class="v14">95</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo14()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/pave-russa1.png" alt="bolo15">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Pave Russa<br>Preço:R$ <span class="v15">112</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo15()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/tortas/prestigio.jpg" alt="bolo16">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Prestígio<br>Preço:R$ <span class="v16">103</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo16()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/torta-holandesa.png" alt="bolo17">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Holandesa <br>Preço:R$ <span class="v17">85</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo17()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/torta-Integral.png" alt="bolo18">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Integral <br>Preço:R$ <span class="v18">94</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo18()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/tortas/torta-limao.jpg" alt="bolo19">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Limão<br> Preço:R$ <span class="v19">83</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo19()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/torta-mousse-choco.jpg" alt="bolo20">
+                        <h3 class="titulo">Torta</h3>
+                        <h3>Mousse Chocolate<br> Preço:R$ <span class="v20">65</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo20()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/Banofee.png" alt="bolo21">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Banofee <br>Preço:R$ <span class="v21">17</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo21()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/doces_padaria/biscoito-goiaba.jpg" alt="bolo22">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Biscoito Goiaba <br> Preço:R$<span class="v22">13</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo22()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/doces_padaria/bomba-de-chocolate.jpg" alt="bolo23">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Bomba de Chocolate<br> Preço:R$<span class="v23">15</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo23()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/doces/brigadeiro-gourmet.jpg" alt="bolo24">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Brigadeirão Gourmet <br>Preço:R$<span class="v24">20</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo24()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/doces_padaria/minissonho-recheado1.jpg" alt="bolo25">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Minisonho Recheado <br>Preço:R$<span class="v25">35</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo25()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/doces/palha-italiana.jpg" alt="bolo26">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Palha Italiana <br>Preço:R$<span class="v26">49</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo26()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/Petit-Gateo.png" alt="bolo27">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Petit Gateo <br>Preço:R$<span class="v27">45</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo27()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/doces_padaria/pudim-de-padaria.jpg" alt="bolo28">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Pudim de Padaria<br>Preço:R$ <span class="v28">30</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo28()"></div>
+                    </div>
+
+                    <div class="bolos">
+                        <img class="imagemb" src="imagens/Produtos/sobremesas/mini-quindim.png" alt="bolo29">
+                        <h3 class="titulo">Doces</h3>
+                        <h3>Mini Quindim<br>Preço:R$ <span class="v29">20</span></h3>
+                        <div><input class ="styleb" type="button"value="Comprar" onclick="compreibolo29()"></div>
+                    </div>
+                </div>
+            
+                <div id="Produtos-adicionados">
+                    <h3>Produtos Na Cesta</h3>
+                    <div id="listaitens"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <div class="rdp1">
+            <h2>FAST CAKE</h2>
+            <p>Fast Cake: <em>"Velecidade, sabor e satisfação na sua mesa."</em></p>
+                <div id="icon">
+                    <ul id="list-icon">
+                        <li><a href=""><img src="imagens/rodape/insta.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/tiktok.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/gmail.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/rodape/whatsapp.png" alt=""></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="rdp2">
+            <p>&copy; Todos os direitos reservados 2022 - Programadores Cariocas</p>
+        </div>
+    </div>
+
+    <script>
+        var lista = []
+        var valores = []
+        
+        function limpar(lista,valores){
+            var x = lista.length
+            var y = valores.length
+            if (x > 0 || y > 0){
+                while (x > 0 ){
+                lista.pop()
+                valores.pop()
+                console.log(x)
+                x-=1
+            }
+            }
+            else{
+                console.log("lista vazia")
+            }
+            pfechado.innerHTML=''
+            listaitens.innerHTML=''
+        }
+        function Orçamento(valores){
+            var sum = 0;
+            for (var i = 0; i < valores.length; i++) {
+                sum += valores[i];
+            }
+            console.log(sum)
+            pfechado.innerHTML=`Total a pagar até o momento é ${sum}`
+        }
+        function pedidofechado(valores){
+            var sum = 0;
+            for (var i = 0; i < valores.length; i++) {
+                sum += valores[i];
+            }
+            console.log(valores)
+            pfechado.innerHTML=`Valor Final da compra é ${sum}`
+        }
+        function exibir(lista,valores){
+            console.log(lista)
+            console.log(valores)
+            listaitens.innerHTML=''
+            for(var i = 0; i < lista.length; i++){
+                listaitens.innerHTML+=lista[i]+"<br>"
+            }
+        }
+        function compreibolo1(){
+            var num1 =document.getElementsByClassName("v1")[0].innerText;
+            var y = parseInt(num1)
+            lista.push("Bolo de Chocolate e Morango")
+            valores.push(y)
+            console.log(valores)
+            exibir(lista)
+            Orçamento(valores)
+        }                    
+        function compreibolo2(){
+            var num2 =document.getElementsByClassName("v2")[0].innerText;
+            lista.push("Bolo Sabor Coco")
+            var y = parseInt(num2)
+            valores.push(y)
+            console.log(valores)
+            exibir(lista)
+            Orçamento(valores)  
+        }
+        function compreibolo3(){
+            lista.push("Bolo Abacaxi com Coco")
+            var num1 =document.getElementsByClassName("v3")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            console.log(valores)
+            exibir(lista)
+            Orçamento(valores)
+        }
+        function compreibolo4(){
+            lista.push("Bolo Black Cake")
+            var num1 =document.getElementsByClassName("v4")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores) 
+        }
+        function compreibolo5(){
+            lista.push("Bolo Bombom")
+            var num1 =document.getElementsByClassName("v5")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)
+        }
+        function compreibolo6(){
+            lista.push("Bolo Brigadeirão")
+            var num1 =document.getElementsByClassName("v6")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)     
+        }
+        function compreibolo7(){
+            lista.push("Bolo Delícia de Damasco")
+            var num1 =document.getElementsByClassName("v7")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo8(){
+            lista.push("Bolo Doce de leite com Coco")
+            var num1 =document.getElementsByClassName("v8")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo9(){
+            lista.push("Bolo Morango com Chantilly")
+            var num1 =document.getElementsByClassName("v9")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo10(){
+            lista.push("Bolo Nozes")
+            var num1 =document.getElementsByClassName("v10")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo11(){
+            lista.push("Bolo Morango Trufado")
+            var num1 =document.getElementsByClassName("v11")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo12(){
+            lista.push("Torta Cheese Cake")
+            var num1 =document.getElementsByClassName("v12")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo13(){
+            lista.push("Torta Crocante")
+            var num1 =document.getElementsByClassName("v13")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo14(){
+            lista.push("Torta KitKat Morango")
+            var num1 =document.getElementsByClassName("v14")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo15(){
+            lista.push("Torta Pave Russa")
+            var num1 =document.getElementsByClassName("v15")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo16(){
+            lista.push("Torta Prestígio")
+            var num1 =document.getElementsByClassName("v16")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo17(){
+            lista.push("Torta Holandesa")
+            var num1 =document.getElementsByClassName("v17")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo18(){
+            lista.push("Torta Integral")
+            var num1 =document.getElementsByClassName("v18")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo19(){
+            lista.push("Torta Limão")
+            var num1 =document.getElementsByClassName("v19")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                   
+        }
+        function compreibolo20(){
+            lista.push("Torta Mousse Chocolate")
+            var num1 =document.getElementsByClassName("v20")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo21(){
+            lista.push("Doces Banofee")
+            var num1 =document.getElementsByClassName("v21")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo22(){
+            lista.push("Doces Biscoito Goiaba")
+            var num1 =document.getElementsByClassName("v22")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo23(){
+            lista.push("Doces Bomba de Chocolate")
+            var num1 =document.getElementsByClassName("v23")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)
+        }
+        function compreibolo24(){
+            lista.push("Doces Brigadeirão Gourmet")
+            var num1 =document.getElementsByClassName("v24")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo25(){
+            lista.push("Minisonho Recheado")
+            var num1 =document.getElementsByClassName("v25")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo26(){
+            lista.push("Palha Italiana")
+            var num1 =document.getElementsByClassName("v26")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)                    
+        }
+        function compreibolo27(){
+            lista.push("Petit Gateo")
+            var num1 =document.getElementsByClassName("v27")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)
+        }
+        function compreibolo28(){
+            lista.push("Pudim de Padaria")
+            var num1 =document.getElementsByClassName("v28")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)
+        }
+        function compreibolo29(){
+            lista.push("Mini Quindim")
+            var num1 =document.getElementsByClassName("v29")[0].innerText;
+            var y = parseInt(num1)
+            valores.push(y)
+            exibir(lista)
+            Orçamento(valores)
+        }
+    </script>
+
+</body>
+</html>
